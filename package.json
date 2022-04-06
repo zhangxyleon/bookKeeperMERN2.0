@@ -1,0 +1,28 @@
+{
+  "name": "bookkeepermern2.0",
+  "version": "1.0.0",
+  "description": "bookkeeper app by mern",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon sever"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangxyleon/bookKeeperMERN2.0.git"
+  },
+  "author": "Leon Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangxyleon/bookKeeperMERN2.0/issues"
+  },
+  "homepage": "https://github.com/zhangxyleon/bookKeeperMERN2.0#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,6 +1,7 @@
 const express = require('express');
-
+const passport = require('passport');
 const app = express();
+const path = require('path');
 
 //connet to Mongodb server
 const mongoose = require('mongoose');
@@ -21,6 +22,11 @@ const connectDB = async () => {
 };
 
 connectDB();
+app.use(passport.initialize());
+app.use(express.json());
+app.use('/users', require('./routes/userRoute'));
+app.use('/collections', require('./routes/bookmarkRoute.js'));
+
 
 app.get('/', (req, res) => res.send('API Running'));
 
